@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in .4s;
+}
+
+.container .box {
+  width: 800px;
+  padding: 20px;
+  background: dodgerblue;
+}
+
+.container .box .time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: white;
+  gap: 10px;
+}
+
+.container .box .action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "img": "https://safiabakery.uz/uploads/products/thumbs/171_1693203863.png",
+      "title": "Афганка торт",
+      "price": 286000,
+      "bought": false
+    },
+    {
+      "id": 1,
+      "img": "https://safiabakery.uz/uploads/products/thumbs/171_1693203748.png",
+      "title": "Дари торт",
+      "price": 292000,
+      "bought": false
+    },
+    {
+      "id": 2,
+      "img": "https://safiabakery.uz/uploads/products/thumbs/171_1671012000.png",
+      "title": "Итальяно торт",
+      "price": 260000,
+      "bought": false
+    },
+    {
+      "id": 3,
+      "img": "https://safiabakery.uz/uploads/products/thumbs/171_1690793979.png",
+      "title": "Карамельный медовый прямоугольный торт",
+      "price": 308000,
+      "bought": false
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "img": "https://safiabakery.uz/uploads/products/thumbs/171_1693203748.png",
+      "title": "Дари торт",
+      "price": 292000,
+      "bought": false
+    },
+    {
+      "id": 2,
+      "img": "https://safiabakery.uz/uploads/products/thumbs/171_1693203863.png",
+      "title": "Афганка торт",
+      "price": 286000,
+      "bought": false
+    }
+  ]
+}
