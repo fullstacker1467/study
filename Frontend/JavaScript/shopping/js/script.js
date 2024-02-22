@@ -59,7 +59,7 @@ const FAKE_DATA = [
     img: "../img/3.png",
     title: "bar chair",
     price: 27,
-    stock: 0,
+    stock: 8,
     count: 1,
     bought: false,
     liked: false,
@@ -125,6 +125,7 @@ const FAKE_DATA = [
     liked: false,
   },
 ];
+
 let products = [];
 let cart = JSON.parse(localStorage.getItem("savat")) || [];
 function setData() {

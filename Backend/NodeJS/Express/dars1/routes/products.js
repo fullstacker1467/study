@@ -12,7 +12,6 @@ router.get("/add", (req, res) => {
         title: "Add-product",
         isAdd: true
     })
-
 });
 router.get("/products", (req, res) => {
     res.render('products', {
