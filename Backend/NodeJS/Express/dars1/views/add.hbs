@@ -1,1 +1,63 @@
-<h1>Add</h1>
+<div class="w-50 mx-auto">
+  <form action="/add-products" method="post" class="mt-5 d-flex flex-column">
+    <h1 class="text-center">Add product</h1>
+    {{#if addError}}
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error!</strong>
+        {{addError}}
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+    {{/if}}
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        name="title"
+        placeholder="Title"
+      />
+      <label for="floatingInput">Title</label>
+    </div>
+    <div class="form-floating mb-3">
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          name="description"
+          placeholder="Description"
+          id="floatingInput"
+        />
+        <label for="floatingTextarea2">Description</label>
+      </div>
+    </div>
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        name="image"
+        placeholder="Image"
+      />
+      <label for="floatingInput">Image</label>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">$</span>
+      <div class="form-floating">
+        <input
+          type="number"
+          class="form-control"
+          name="price"
+          id="floatingInputGroup1"
+          placeholder="Price"
+        />
+        <label for="floatingInputGroup1">Price</label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Add product</button>
+  </form>
+</div>

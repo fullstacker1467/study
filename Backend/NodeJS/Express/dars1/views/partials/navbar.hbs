@@ -23,17 +23,23 @@
           <a class="text-dark text-decoration-none" href="/add">Add</a>
         </li>
       {{/if}}
-      <div class="btn-group">
-        <button class="btn btn-primary">
-          <a href="/login" class="text-decoration-none text-light">Login</a>
+      {{#if token}}
+        <button class="btn btn-danger active">
+          <a href="/logout" class="text-decoration-none text-light">Logout</a>
         </button>
-        <button class="btn btn-success">
-          <a
-            href="/register"
-            class="text-decoration-none text-light"
-          >Register</a>
-        </button>
-      </div>
+      {{else}}
+        <div class="btn-group">
+          <button class="btn btn-primary">
+            <a href="/login" class="text-decoration-none text-light">Login</a>
+          </button>
+          <button class="btn btn-success">
+            <a
+              href="/register"
+              class="text-decoration-none text-light"
+            >Register</a>
+          </button>
+        </div>
+      {{/if}}
     </nav>
   </div>
 </header>

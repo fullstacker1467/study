@@ -154,15 +154,14 @@ function setRender() {
   products.map((item, index) => {
     container.innerHTML += `
     <div class="card">
-    ${
-      item.liked
+    ${item.liked
         ? `<i onClick='setLike(${JSON.stringify(
-            item
-          )})' class="fa-solid fa-heart love tomato"></i>`
+          item
+        )})' class="fa-solid fa-heart love tomato"></i>`
         : `<i onClick='setLike(${JSON.stringify(
-            item
-          )})' class="fa-regular fa-heart love"></i>`
-    }
+          item
+        )})' class="fa-regular fa-heart love"></i>`
+      }
     <figure>
       <img src="${item.img}" />
     </figure>
@@ -170,29 +169,25 @@ function setRender() {
       <h5>${item.title}</h5>
       <div class="flex bir">
         <h4>$ ${item.price}</h4>
-        <h3 class=${item.stock > 0 ? "green" : "tomato"}>in stock (${
-      item.stock
-    })</h3>
+        <h3 class=${item.stock > 0 ? "green" : "tomato"}>in stock (${item.stock
+      })</h3>
       </div>
       <div class="flex">
-          ${
-            item.bought
-              ? ""
-              : `
+          ${item.bought
+        ? ""
+        : `
           <div class="btn_group">
           <button onClick='setDicrement(${item.id})'>-</button>
           <span>${item.count}</span>
           <button onClick='setIncrement(${item.id})'>+</button>
         </div>
                 `
-          }
-        ${
-          item.bought
-            ? ` <button class="bought true">Added <i class="fa-solid fa-check"></i></button>`
-            : `<button ${
-                item.stock > 0 ? `onClick='setBought(${index})'` : ""
-              } class="bought">Add <i class="fa-solid fa-cart-plus"></i></button>`
-        }
+      }
+        ${item.bought
+        ? ` <button class="bought true">Added <i class="fa-solid fa-check"></i></button>`
+        : `<button ${item.stock > 0 ? `onClick='setBought(${index})'` : ""
+        } class="bought">Add <i class="fa-solid fa-cart-plus"></i></button>`
+      }
       </div>
     </div>
   </div>
@@ -358,15 +353,14 @@ searchItem.addEventListener("input", (e) => {
       .map((item, index) => {
         container.innerHTML += `
         <div class="card">
-        ${
-          item.liked
+        ${item.liked
             ? `<i onClick='setLike(${JSON.stringify(
-                item
-              )})' class="fa-solid fa-heart love tomato"></i>`
+              item
+            )})' class="fa-solid fa-heart love tomato"></i>`
             : `<i onClick='setLike(${JSON.stringify(
-                item
-              )})' class="fa-regular fa-heart love"></i>`
-        }
+              item
+            )})' class="fa-regular fa-heart love"></i>`
+          }
         <figure>
           <img src="${item.img}" />
         </figure>
@@ -374,27 +368,24 @@ searchItem.addEventListener("input", (e) => {
           <h5>${item.title}</h5>
           <div class="flex bir">
             <h4>$ ${item.price}</h4>
-            <h3 class=${item.stock > 0 ? "green" : "tomato"}>in stock (${
-          item.stock
-        })</h3>
+            <h3 class=${item.stock > 0 ? "green" : "tomato"}>in stock (${item.stock
+          })</h3>
           </div>
           <div class="flex">
-              ${
-                item.bought
-                  ? ""
-                  : `
+              ${item.bought
+            ? ""
+            : `
               <div class="btn_group">
               <button onClick='setDicrement(${item.id})'>-</button>
               <span>${item.count}</span>
               <button onClick='setIncrement(${item.id})'>+</button>
             </div>
                     `
-              }
-            ${
-              item.bought
-                ? ` <button class="bought true">Added <i class="fa-solid fa-check"></i></button>`
-                : `<button onClick='setBought(${index})' class="bought">Add <i class="fa-solid fa-cart-plus"></i></button>`
-            }
+          }
+            ${item.bought
+            ? ` <button class="bought true">Added <i class="fa-solid fa-check"></i></button>`
+            : `<button onClick='setBought(${index})' class="bought">Add <i class="fa-solid fa-cart-plus"></i></button>`
+          }
           </div>
         </div>
       </div>
