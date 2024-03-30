@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 60px;
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .input-field {
+      width: 50%;
+      input {
+        width: 100%;
+        font-size: 19px;
+        padding: 5px 10px;
+        border: 2px #346473 solid;
+        border-radius: 10px;
+        outline-color: dodgerblue;
+      }
+    }
+    .cart-button {
+      position: relative;
+      i {
+        font-size: 30px;
+        color: #346473;
+      }
+      span {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        background: black;
+        padding: 0 5px;
+        color: white;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+section {
+  .container {
+    display: grid;
+    gap: 20px;
+    .card {
+      position: relative;
+      border: 2px #346473 solid;
+      border-radius: 10px;
+      picture {
+        i {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          font-size: 22px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .text-field {
+        padding: 10px;
+        h3 {
+          text-align: center;
+        }
+        .flex {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 15px;
+          &:nth-child(4) {
+            .btn {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              button {
+                width: 30px;
+                height: 30px;
+              }
+            }
+            .shop {
+              border: none;
+              background: transparent;
+              i {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 32;
+  display: none;
+  .container {
+    padding-bottom: 70px;
+    .box {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      i {
+        font-size: 30px;
+      }
+    }
+    .body {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      .card {
+        background: white;
+        border-radius: 10px;
+        picture {
+          img {
+            width: 100%;
+          }
+        }
+        .text-field {
+          padding: 5px;
+          .flex {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .btn {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              button {
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+@media screen and (min-width: 300px) {
+  section {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    .container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  section {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}

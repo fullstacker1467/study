@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 60px;
+}
+nav .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container .input-field {
+  width: 50%;
+}
+nav .container .input-field input {
+  width: 100%;
+  font-size: 19px;
+  padding: 5px 10px;
+  border: 2px #346473 solid;
+  border-radius: 10px;
+  outline-color: dodgerblue;
+}
+nav .container .cart-button {
+  position: relative;
+}
+nav .container .cart-button i {
+  font-size: 30px;
+  color: #346473;
+}
+nav .container .cart-button span {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background: black;
+  padding: 0 5px;
+  color: white;
+  border-radius: 50%;
+}
+
+section .container {
+  display: grid;
+  gap: 20px;
+}
+section .container .card {
+  position: relative;
+  border: 2px #346473 solid;
+  border-radius: 10px;
+}
+section .container .card picture i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 22px;
+}
+section .container .card picture img {
+  width: 100%;
+}
+section .container .card .text-field {
+  padding: 10px;
+}
+section .container .card .text-field h3 {
+  text-align: center;
+}
+section .container .card .text-field .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+section .container .card .text-field .flex:nth-child(4) .btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+section .container .card .text-field .flex:nth-child(4) .btn button {
+  width: 30px;
+  height: 30px;
+}
+section .container .card .text-field .flex:nth-child(4) .shop {
+  border: none;
+  background: transparent;
+}
+section .container .card .text-field .flex:nth-child(4) .shop i {
+  font-size: 22px;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 32;
+  display: none;
+}
+.modal .container {
+  padding-bottom: 70px;
+}
+.modal .container .box {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.modal .container .box i {
+  font-size: 30px;
+}
+.modal .container .body {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.modal .container .body .card {
+  background: white;
+  border-radius: 10px;
+}
+.modal .container .body .card picture img {
+  width: 100%;
+}
+.modal .container .body .card .text-field {
+  padding: 5px;
+}
+.modal .container .body .card .text-field .flex {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal .container .body .card .text-field .flex .btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.modal .container .body .card .text-field .flex .btn button {
+  width: 30px;
+  height: 30px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+@media screen and (min-width: 300px) {
+  section .container {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 600px) {
+  section .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 900px) {
+  section .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
